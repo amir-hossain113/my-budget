@@ -1,0 +1,81 @@
+.container{
+    margin: 30px 40px;
+}
+h1{
+    text-align: center;
+    font-size: 45px;
+}
+.sub-container{
+    display: flex;
+}
+.image img{
+    width: 90%;
+    height: 800px;
+}
+.parent-div{
+    width: 60%;
+    height: 800px;
+    background-color: cyan;
+}
+form{
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+form p{
+    font-size: 20px;
+}
+form p input{
+    height: 38px;
+    width: 205px;
+    border: none;
+    border-radius: 2px;
+    background-color: #efefef;
+    font-size: 18px;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+.income-pera{
+    margin-left: -12px;
+}
+.clothes-pera{
+    margin-left: -24px;
+}
+.calculate-btn{
+    background-color: #ffd96a;
+    color: white;
+    border: none;
+    padding: 12px 50px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.input-save{
+    width: 112px;
+    height: 38px;
+    text-align: center;
+    margin-right: 15px;
+    padding-left: 5px;
+}
+.save-btn{
+    background-color: #ffd96a;
+    color: white;
+    border: none;
+    padding: 10px 60px;
+    font-size: 18px;
+    border-radius: 3px;
+    margin-left: 12px;
+}
+
+/* Media queries */
+/* mobile device */
+@media only screen and (max-width: 688px){
+    .sub-container{
+        display: block;
+    }
+    .parent-div{
+        margin-top: 20px;
+        width: 90%;
+        height: 800px;
+    }
+}
+
