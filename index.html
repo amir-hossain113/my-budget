@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Budget</title>
+    <!-- style link -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,25 +19,30 @@
             <div class="parent-div">
                 <div class="child-div">
                     <h2>Income</h2>
-                        <p class="income-pera">income: <input class="input" id="income" type="text" value="0"></p>
+                        <p class="income-pera">income: <input class="input" id="income" type="text" placeholder="0"></p>
                         <h2>Expenses</h2>
-                        <p>Food: <input class="input" type="text" value="0" id="food-exp"></p>
-                        <p>Rent: <input class="input" type="text" value="0" id="rent-exp"></p>
-                        <p class="clothes-pera">Clothes: <input class="input" type="text" value="0" id="cloth-exp"></p>
+                        <p>Food: <input class="input" type="text" placeholder="0"  id="food-exp"></p>
+                        <p>Rent: <input class="input" type="text" placeholder="0" id="rent-exp"></p>
+                        <p class="clothes-pera">Clothes: <input class="input" type="text" placeholder="0" id="cloth-exp"></p>
                         <button id="calculation-btn" class="calculate-btn">Calculate</button><br>
                         <h2>Total Expenses: <span id="total-exp">0</span></h2>
                         <h2>Balance: <span id="balance">0</span></h2>
-                        <p>Save: <input type="text" value="0" class="input-save" id="save-input"> % <button class="save-btn" id="save-button">Save</button></p>
+                        <p>Save: <input type="text" placeholder="0" value="" class="input-save" id="save-input"> % <button class="save-btn" id="save-button">Save</button></p>
                         <h2>Saving Amount: <span id="saving-amount">0</span></h2>
                         <h2>Remaining Balance: <span id="remaining-balance">0</span></h2>
                 </div>
             </div>
         </div>
-        
+        <div class="error-section">
+            <p id="error-msg1" class="error">❌ Error! you can't type any negative numbers</p>
+            <p id="error-msg2" class="error">❌ Error!! you can't type anything except numbers</p>
+            <p id="error-msg3" class="error">❌ Error!!! it is not possible..</p>
+            <p id="error-msg4" class="error">❌ Error!!!! sorry it is not possible</p>
+        </div>
     </section>
     <!-- section end   -->
 
-
+    <!-- script link -->
     <script src="js/script.js"></script>
 </body>
 </html>
